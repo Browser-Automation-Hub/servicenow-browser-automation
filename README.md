@@ -253,6 +253,40 @@ await withAnchorBrowser(async (page) => {
 
 ---
 
+## Known Selectors Reference
+
+> These CSS selectors were observed in ServiceNow web interfaces. Enterprise applications update their UIs — verify against your specific instance and submit PRs when selectors break.
+
+| Element | Selector | Notes |
+|---------|----------|-------|
+| Login: username | `#user_name` | Login form |
+| Login: password | `#user_password` | Login form |
+| Login: submit | `#sysverb_login` | Login form |
+| Login: mfa code | `input[name="passcode"]` | Login form |
+| create incident: short desc | `#incident\.short_description` | |
+| create incident: description | `#incident\.description` | |
+| create incident: urgency | `#incident\.urgency` | |
+| create incident: impact | `#incident\.impact` | |
+| create incident: caller lookup | `#incident\.caller_id_label` | |
+| create incident: submit btn | `[id$="sysverb_insert"]` | |
+| update cmdb: cmdb nav | `a[href*="cmdb_ci.do"]` | |
+| update cmdb: search box | `#sysparm_search` | |
+| update cmdb: ci row | `.list_row td a` | |
+| update cmdb: attribute field | `input[id*="ci_"]` | |
+| update cmdb: save btn | `[id$="sysverb_update"]` | |
+| assign task: task list | `#task_list` | |
+| assign task: assigned to | `input[id$="assigned_to_label"]` | |
+| assign task: lookup icon | `a[id*="assigned_to."]` | |
+| assign task: update btn | `[id$="sysverb_update"]` | |
+| generate report: report nav | `a[href*="/reports/"]` | |
+| generate report: report row | `.report_name a` | |
+| generate report: run btn | `.btn-primary[name="run"]` | |
+| generate report: export csv | `input[value*="CSV"]` | |
+
+> ⚠️ Selectors are best-effort. Run `node src/utils.js --verify-selectors` to test against your instance.
+
+---
+
 ## More Browser Automation Projects
 
 This is part of the **[Browser Automation Hub](https://github.com/Browser-Automation-Hub)** — a collection of open-source browser automation scaffolds for systems with poor or no API support:
