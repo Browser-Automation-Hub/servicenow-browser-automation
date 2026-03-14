@@ -21,7 +21,7 @@ This system requires **MFA** (Okta / Duo / Azure MFA). The OSS version provides 
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/servicenow-browser-automation.git
+git clone https://github.com/Browser-Automation-Hub/servicenow-browser-automation.git
 cd servicenow-browser-automation
 npm install
 cp .env.example .env
