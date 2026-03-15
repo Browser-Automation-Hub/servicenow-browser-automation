@@ -1,7 +1,7 @@
 {
-  "name": "servicenow-browser-automation",
+  "name": "@browser-automation-hub/servicenow-browser-automation",
   "version": "1.0.0",
-  "description": "Browser automation for ServiceNow — create/update incidents, manage CMDB records, run reports, and automate ITSM workflows when the REST API is locked down.",
+  "description": "Browser automation for ServiceNow — create/update incidents, manage CMDB records, and automate ITSM workflows",
   "main": "src/actions.js",
   "scripts": {
     "start": "node examples/basic-login.js",
@@ -15,7 +15,7 @@
     "browser-automation",
     "puppeteer",
     "playwright",
-    "anchorbrowser",
+    "anchor-browser",
     "nodejs"
   ],
   "license": "MIT",
@@ -34,5 +34,8 @@
   "homepage": "https://github.com/Browser-Automation-Hub/servicenow-browser-automation#readme",
   "bugs": {
     "url": "https://github.com/Browser-Automation-Hub/servicenow-browser-automation/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
